@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Der Junge auf dem Berg</title>
+    <link rel="stylesheet" href="D.J.a.d.B.css">
+</head>
+<body>
+    <header>
+    
+    <h1>Der Junge auf dem Berg: Quiz</h1>
+    <p id="quiz-description">Dies ist ein Quiz über das Buch "Der Junge auf dem Berg". Löse folgende Fragen und schaue dann auf dem Scoreboard am Beamer, ob du es schaffst! (Wer aufgepasst hat, dem wird es nicht schwer fallen)</p>
+    <hr>
+    <nav>
+        <h2>Inhaltsverzeichnis</h2>
+        <ul>
+            <li><a href="#book-quiz-form">Quiz</a></li>
+            <li><a href="#scoreboard">Scoreboard</a></li>
+    </nav>
+    </header>
+    <hr>
+    <form id="book-quiz-form">
+        <h3>Quiz</h3>
+        <p class="difficulty">Schwierigkeitsgrad: 1</p>
+        <div class="question-group">
+            <label for="question1">Wie heißt der Junge im Buch (am Anfang)?</label><br>
+            <input type="text" id="question1" name="question1">
+        </div>
+
+        <div class="question-group">
+            <label for="question2">Wo spielt die Geschichte hauptsächlich?</label><br>
+            <input type="text" id="question2" name="question2">
+        </div>
+
+        <div class="question-group">
+            <label for="question3">Welche Nationalität hat der Junge?</label><br>
+            <input type="text" id="question3" name="question3">
+        </div>
+
+        <div class="question-group">
+            <label for="question4">Wie heißen seine Eltern?</label><br>
+            <input type="text" id="question4" name="question4">
+        </div>
+
+        <div class="question-group">
+            <label for="question5">Wie heißt sein Freund?</label><br>
+            <input type="text" id="question5" name="question5">
+        </div>
+
+        <p class="difficulty">Schwierigkeitsgrad: 2</p>
+        <div class="question-group">
+            <label for="question6">Wo wird er zuerst nach dem Tod seiner Eltern hingebracht?</label><br>
+            <input type="text" id="question6" name="question6">
+        </div>
+
+        <div class="question-group">
+            <label for="question7">Wie nennen die Juden den Nicht-Juden?</label><br>
+            <input type="text" id="question7" name="question7">
+        </div>
+
+        <div class="question-group">
+            <label for="question8">Wo wird er später hingebracht?</label><br>
+            <input type="text" id="question8" name="question8">
+        </div>
+
+        <div class="question-group">
+            <label for="question9">Wem befreundet er sich im Waisenhaus?</label><br>
+            <input type="text" id="question9" name="question9">
+        </div>
+
+        <div class="question-group">
+            <label for="question10">Wie heißt der Junge, der ihn schlägt?</label><br>
+            <input type="text" id="question10" name="question10">
+        </div>
+
+        <div class="question-group">
+            <label for="question11">Wie heißt seine Tante?</label><br>
+            <input type="text" id="question11" name="question11">
+        </div>
+
+        <div class="question-group">
+            <label for="question12">Wie heißt der Chauffeur?</label><br>
+            <input type="text" id="question12" name="question12">
+        </div>
+
+        <div class="question-group">
+            <label for="question13">Wie heißt der Mann, der ihn "aufnimmt"?</label><br>
+            <input type="text" id="question13" name="question13">
+        </div>
+
+        <div class="question-group">
+            <label for="question14">Wie heißt der Berghof?</label><br>
+            <input type="text" id="question14" name="question14">
+        </div>
+
+        <p class="difficulty">Schwierigkeitsgrad: 3</p>
+        <div class="question-group">
+            <label for="question15">Wie heißt das Mädchen in der Schule?</label><br>
+            <input type="text" id="question15" name="question15">
+        </div>
+
+        <div class="question-group">
+            <label>Distanziert er sich von Hitler?</label><br>
+            <input type="radio" id="question16-yes" name="question16" value="ja"><label for="question16-yes"> Ja</label><br>
+            <input type="radio" id="question16-no" name="question16" value="nein"><label for="question16-no"> Nein</label>
+        </div>
+
+        <div class="question-group">
+            <label>Verrät er seine Tante und den Chauffeur?</label><br>
+            <input type="radio" id="question17-yes" name="question17" value="ja"><label for="question17-yes"> Ja</label><br>
+            <input type="radio" id="question17-no" name="question17" value="nein"><label for="question17-no"> Nein</label>
+        </div>
+
+        <p class="difficulty">Schwierigkeitsgrad: 4</p>
+        <div class="question-group">
+            <label>Ist seine Unwissenheit eine Rechtfertigung für seine Mitschuld?</label><br>
+            <input type="radio" id="question18-yes" name="question18" value="ja"><label for="question18-yes"> Ja</label><br>
+            <input type="radio" id="question18-no" name="question18" value="nein"><label for="question18-no"> Nein</label>
+        </div>
+
+        <div class="question-group">
+            <label for="question19">Wie heißt der Hund Pierrots?</label><br>
+            <input type="text" id="question19" name="question19">
+        </div>
+
+        <button type="button" id="check-answers-button" class="quiz-button">Antworten überprüfen</button>
+    </form>
+    <hr>
+
+    <section class="scoreboard" id="scoreboard">
+        <h3>Scoreboard für die Klasse</h3>
+        <p>Hier kannst du deinen Namen eintragen und deine Punkte speichern. So sieht die Klasse, wer die meisten Fragen richtig hatte.</p>
+        <div class="score-save">
+            <label for="score-name">Name:</label>
+            <input type="text" id="score-name" placeholder="Dein Name">
+            <button type="button" id="save-score-button" class="quiz-button" disabled>Score speichern</button>
+        </div>
+        <div id="scoreboard-list">Noch keine Einträge. Mache zuerst das Quiz.</div>
+    </section>
+    <hr>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="D.J.a.d.B.js"></script>
+    <footer>
+        <p>Quiz erstellt von Mustafa M.</p>
+        <p>Github:<a href="https://github.com/ychw1">Ychw1</a></p>
+    </footer>
+</body>
+</html>
